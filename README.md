@@ -1,1 +1,5 @@
-# odoo
+# odoo 12
+### Configure odoo with remote database
+* /etc/odoo/odoo.conf  
+  As the security issue, don't use `postgre` as the `db_user`.  
+  If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
