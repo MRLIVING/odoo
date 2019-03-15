@@ -6,3 +6,4 @@
 
 ## Reference
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
+* [GCP LB with Let’s encrypt and auto renew certificate](https://blog.gcp.expert/gcp-letsencrypt-ssl/#more-49)
