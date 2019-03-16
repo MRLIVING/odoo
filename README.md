@@ -7,3 +7,4 @@
 ## Reference
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
 * [GCP LB with Let’s encrypt and auto renew certificate](https://blog.gcp.expert/gcp-letsencrypt-ssl)
+* [redirect HTTP to HTTPS under GCP Load Balancing with NGINX](https://serverfault.com/questions/862725/how-can-you-redirect-http-to-https-gcp-load-balancing#answers-header)
