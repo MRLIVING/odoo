@@ -1,4 +1,7 @@
-# odoo 12
+## Overview of scalable odoo
+![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
+
+
 ### Configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
