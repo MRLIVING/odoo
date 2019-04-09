@@ -1,8 +1,11 @@
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
+## Installation
+### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#linux)
 
-### Configure odoo with remote database
+
+## Configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
