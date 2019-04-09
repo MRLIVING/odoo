@@ -2,7 +2,7 @@
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
 ## Installation
-### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#linux)
+### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
 
 ## Configure odoo with remote database
