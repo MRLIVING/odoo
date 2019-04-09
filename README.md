@@ -4,6 +4,10 @@
 ## Installation
 ### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
+### [Wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+* [version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
+
+
 
 ## Configure odoo with remote database
 * /etc/odoo/odoo.conf  
