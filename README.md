@@ -5,6 +5,12 @@
 ### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
 ### [Wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+* Ubuntu 18.04 ([ref](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123))
+```
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb`
+sudo dpkg -i wkhtmltox_0.12.5–1.bionic_amd64.deb`
+sudo apt install -f
+```
 * [version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
 
 
