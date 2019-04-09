@@ -5,7 +5,7 @@
 ### [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
 ### [Wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
-* [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123))
+* [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123#8fae)
 ```
 wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb`
 sudo dpkg -i wkhtmltox_0.12.5–1.bionic_amd64.deb`
