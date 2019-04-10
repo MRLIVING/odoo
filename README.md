@@ -47,7 +47,7 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
 ```
 * new Frontend IP and port for HTTPS from web UI at first time
-  * keep the ${target_proxy_name} for update
+  * keep the `${target_proxy_name}` as update parameters 
 
 * update SSL cretificates before expiration
 ```
