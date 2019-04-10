@@ -2,7 +2,7 @@
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
 ## Installation (based on Ubuntu 18.04 LTS)
-### Nginx
+### [Nginx](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/#official-debian-ubuntu-packages)
 #### install
 ```
 sudo apt update
