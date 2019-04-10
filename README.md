@@ -1,7 +1,13 @@
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
-## Installation
+## Installation (based on Ubuntu 18.04 LTS)
+### Nginx
+```
+sudo apt update
+sudo apt install nginx
+```
+
 ### [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
