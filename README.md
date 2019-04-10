@@ -42,8 +42,7 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 * update SSL cretificates before expiration
 ```
 gcloud compute target-https-proxies update ${target_proxy_name} \
---ssl-certificates web-ssl-cer
-t-hoogahome
+--ssl-certificates ${cert_name_in_lb}
 ```
 
 ### Odoo
@@ -70,7 +69,6 @@ sudo apt install -f
 ```
 * [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
 * [downloads](https://wkhtmltopdf.org/downloads.html)
-
 
 ## Configure odoo with remote database
 * /etc/odoo/odoo.conf  
