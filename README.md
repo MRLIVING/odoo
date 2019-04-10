@@ -39,7 +39,7 @@ sudo dehydrated --register --accept-terms
 sudo dehydrated -c
 ```
 
-### [apply/update the certificates to gcp load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
+### [apply/update the certificates to GCP Load Balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
 * create the certificates into `Load balancing/Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
@@ -54,6 +54,9 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 gcloud compute target-https-proxies update ${target_proxy_name} \
 --ssl-certificates ${cert_name_in_lb}
 ```
+
+### [GCP firewall rule for Load Balancing](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
+* allows traffic from `130.211.0.0/22` and `35.191.0.0/16` to instances.
 
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
