@@ -29,7 +29,7 @@ ${domain_name}
 ```
 
 #### create ssl certificates
-1. accept these terms of service at First time only
+1. accept these terms of service **at first time only**
 ```
 sudo dehydrated --register --accept-terms
 ```
@@ -46,7 +46,7 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
 --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
 ```
-* new Frontend IP and port for HTTPS from web UI at first time
+* new Frontend IP and port for HTTPS from web UI **at first time**
   * keep the `${target_proxy_name}` as update parameters 
 
 * update SSL cretificates before expiration
