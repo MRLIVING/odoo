@@ -10,8 +10,9 @@ sudo apt install nginx
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
 
+1. accept these terms of service at First time only
 ```
-dehydrated --register --accept-terms
+sudo dehydrated --register --accept-terms
 ```
 
 ### Odoo
