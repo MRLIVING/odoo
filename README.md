@@ -32,7 +32,7 @@ sudo dehydrated -c
 ```
 
 ### apply the certificates in gcp load balancing 
-* create the certificates into `Load balancing>>Certificate` 
+* create the certificates into `Load balancing/Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
