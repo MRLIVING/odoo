@@ -10,8 +10,14 @@ sudo apt install nginx
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
 #### configuration
+/etc/dehydrated/config
+```
+KEYSIZE=2048
 ```
 
+/etc/dehydrated/domains.txt
+```
+${domain_name}
 ```
 
 #### get certificates
