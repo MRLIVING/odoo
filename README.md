@@ -70,6 +70,11 @@ echo "deb http://nightly.odoo.com/11.0/nightly/deb/ ./" >> /etc/apt/sources.list
 apt-get update && apt-get install odoo
 ```
 
+## Configure odoo with remote database
+* /etc/odoo/odoo.conf  
+  As the security issue, don't use `postgre` as the `db_user`.  
+  If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
+
 ### [Wkhtmltopdf](https://wkhtmltopdf.org/index.html)
 * [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123#8fae)
 ```
@@ -79,11 +84,6 @@ sudo apt install -f
 ```
 * [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
 * [downloads](https://wkhtmltopdf.org/downloads.html)
-
-## Configure odoo with remote database
-* /etc/odoo/odoo.conf  
-  As the security issue, don't use `postgre` as the `db_user`.  
-  If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
 
 ## Reference
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
