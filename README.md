@@ -3,9 +3,17 @@
 
 ## Installation (based on Ubuntu 18.04 LTS)
 ### Nginx
+#### install
 ```
 sudo apt update
 sudo apt install nginx
+```
+
+#### configuration
+```
+if ($http_x_forwarded_proto = "http") {
+    return 301 https://$host$request_uri; 
+}
 ```
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
