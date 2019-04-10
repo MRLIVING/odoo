@@ -8,6 +8,12 @@ sudo apt update
 sudo apt install nginx
 ```
 
+### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
+
+```
+dehydrated --register --accept-terms
+```
+
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
