@@ -31,12 +31,18 @@ sudo dehydrated --register --accept-terms
 sudo dehydrated -c
 ```
 
-### apply the certificates in gcp load balancing 
+### apply the certificates to gcp load balancing 
 * create the certificates into `Load balancing/Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
 --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
+```
+* new Frontend IP and port for HTTPS from web UI at first time
+* update SSL cretificates before expiration
+```
+gcloud compute target-https-proxies update lb-hoogahome-target-proxy-2 --ssl-certificates web-ssl-cer
+t-hoogahome
 ```
 
 ### Odoo
