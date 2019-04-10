@@ -20,7 +20,7 @@ KEYSIZE=2048
 ${domain_name}
 ```
 
-#### create certificates
+#### create ssl certificates
 1. accept these terms of service at First time only
 ```
 sudo dehydrated --register --accept-terms
@@ -31,8 +31,8 @@ sudo dehydrated --register --accept-terms
 sudo dehydrated -c
 ```
 
-### gcp load balancing/Certificates
-* create certificates into load balancing
+### apply the certificates in gcp load balancing 
+* create the certificates into `Load balancing>>Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
