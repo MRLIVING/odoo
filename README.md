@@ -20,7 +20,7 @@ KEYSIZE=2048
 ${domain_name}
 ```
 
-#### get certificates
+#### create certificates
 1. accept these terms of service at First time only
 ```
 sudo dehydrated --register --accept-terms
