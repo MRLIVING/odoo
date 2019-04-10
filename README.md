@@ -31,6 +31,12 @@ sudo dehydrated --register --accept-terms
 sudo dehydrated -c
 ```
 
+### gcp load balancing/Certificates
+* create certificates into load balancing
+```
+gcloud compute ssl-certificates create ${cert_name} --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
+```
+
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
