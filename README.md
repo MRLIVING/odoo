@@ -41,7 +41,8 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 * new Frontend IP and port for HTTPS from web UI at first time
 * update SSL cretificates before expiration
 ```
-gcloud compute target-https-proxies update lb-hoogahome-target-proxy-2 --ssl-certificates web-ssl-cer
+gcloud compute target-https-proxies update ${target_proxy_name} \
+--ssl-certificates web-ssl-cer
 t-hoogahome
 ```
 
