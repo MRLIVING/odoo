@@ -55,7 +55,7 @@ gcloud compute target-https-proxies update ${target_proxy_name} \
 --ssl-certificates ${cert_name_in_lb}
 ```
 
-### [GCP firewall rule for Load Balancing](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
+### [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
 * allows traffic from `130.211.0.0/22` and `35.191.0.0/16` to the odoo instances.
 
 ### Odoo
