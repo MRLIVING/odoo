@@ -34,7 +34,9 @@ sudo dehydrated -c
 ### gcp load balancing/Certificates
 * create certificates into load balancing
 ```
-gcloud compute ssl-certificates create ${cert_name} --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
+gcloud compute ssl-certificates create ${cert_name_in_lb} \
+--certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
+--private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
 ```
 
 ### Odoo
