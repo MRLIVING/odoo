@@ -88,6 +88,12 @@ sudo apt install -f
 * [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
 * [downloads](https://wkhtmltopdf.org/downloads.html)
 
+### num2words
+```
+apt-get install python3-pip
+pip3 install num2words
+```
+
 ## Reference
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
 * [GCP LB with Let’s encrypt and auto renew certificate](https://blog.gcp.expert/gcp-letsencrypt-ssl)
