@@ -95,6 +95,7 @@ pip3 install num2words
 ```
 
 ## Reference
+* [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
 * [GCP LB with Let’s encrypt and auto renew certificate](https://blog.gcp.expert/gcp-letsencrypt-ssl)
 * [redirect HTTP to HTTPS under GCP Load Balancing with NGINX](https://serverfault.com/questions/862725/how-can-you-redirect-http-to-https-gcp-load-balancing#answers-header)
