@@ -58,6 +58,22 @@ gcloud compute target-https-proxies update ${target_proxy_name} \
 ### [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
 * allows traffic from `130.211.0.0/22` and `35.191.0.0/16` to the odoo instances.
 
+### [Wkhtmltopdf](https://wkhtmltopdf.org/index.html)
+* [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123#8fae)
+```
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo apt install -f
+```
+* [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
+* [downloads](https://wkhtmltopdf.org/downloads.html)
+
+### num2words
+```
+apt-get install python3-pip
+pip3 install num2words
+```
+
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
@@ -78,21 +94,14 @@ apt-get update && apt-get install odoo
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
 
-### [Wkhtmltopdf](https://wkhtmltopdf.org/index.html)
-* [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123#8fae)
-```
-wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
-sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
-sudo apt install -f
-```
-* [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
-* [downloads](https://wkhtmltopdf.org/downloads.html)
+#### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
+1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
+2. restart the odoo server and update "App List"
+3. install `emipro_theme_base`
+4. Website => Configuration => Settings => "CHOOSE THEME"
 
-### num2words
-```
-apt-get install python3-pip
-pip3 install num2words
-```
+* [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
+
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
