@@ -102,6 +102,9 @@ apt-get update && apt-get install odoo
 
 * [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
 
+#### configure outgoing email
+* [Send email from an app](https://support.google.com/a/answer/176600?hl=en)
+
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
