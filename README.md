@@ -1,3 +1,6 @@
+## TOC
+* Installation
+
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
