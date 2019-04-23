@@ -80,7 +80,8 @@ apt-get install python3-pip
 pip3 install num2words
 ```
 
-### [xlrd, imports data with Excel file, i.e. xls]()https://pypi.org/project/xlrd/
+### [xlrd](https://pypi.org/project/xlrd/)
+* enable to import data from Excel file format, i.e. xls
 ```
 pip3 install xlrd
 ```
