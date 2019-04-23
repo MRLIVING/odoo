@@ -89,18 +89,15 @@ apt-get update && apt-get install odoo
 ```
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
-```
-wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
-echo "deb http://nightly.odoo.com/11.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
-apt-get update && apt-get install odoo
-```
 
 #### configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
+  
+#### apps and modules
 
-#### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
+##### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
 2. restart the odoo server and update "App List"
 3. install `emipro_theme_base`
