@@ -1,5 +1,8 @@
 ## TOC
-* [Installation](#overview-of-scalable-odoo)
+* [Overview](#overview-of-scalable-odoo)
+* [Installation](#installation-based-on-ubuntu-1804-lts)
+  * [Nginx](#nginx)
+  * [dehydrated](#dehydrated)
 
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
