@@ -80,6 +80,11 @@ apt-get install python3-pip
 pip3 install num2words
 ```
 
+### [xlrd, imports data with Excel file, i.e. xls]()https://pypi.org/project/xlrd/
+```
+pip3 install xlrd
+```
+
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
