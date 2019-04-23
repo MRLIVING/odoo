@@ -1,5 +1,5 @@
 ## TOC
-* Installation
+* [Installation](#overview-of-scalable-odoo)
 
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
