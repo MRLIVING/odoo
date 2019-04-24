@@ -113,6 +113,7 @@ apt-get update && apt-get install odoo
 
 #### configure outgoing email
 * [Send email from an app](https://support.google.com/a/answer/176600?hl=en)
+  * [let less secure apps access your account](https://support.google.com/accounts/answer/6010255?hl=en)
 
 
 ## Reference
