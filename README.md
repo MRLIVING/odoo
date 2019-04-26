@@ -74,7 +74,7 @@ sudo apt install -f
 * [compatible version status](https://github.com/odoo/odoo/wiki/Wkhtmltopdf)
 * [downloads](https://wkhtmltopdf.org/downloads.html)
 
-### num2words
+### [num2words](https://pypi.org/project/num2words/)
 ```
 apt-get install python3-pip
 pip3 install num2words
