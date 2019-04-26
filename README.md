@@ -46,7 +46,7 @@ sudo dehydrated --register --accept-terms
 sudo dehydrated -c
 ```
 
-### [apply/update the certificates to GCP Load Balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
+### [apply/update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
 * create the certificates into `Load balancing/Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
