@@ -93,7 +93,7 @@ pip3 install num2words
 pip3 install xlrd
 ```
 
-### [xlwt](https://pypi.org/project/xlwt/
+### [xlwt](https://pypi.org/project/xlwt/)
 * a library for writing data and formatting information to older Excel files (ie: .xls)
 ```
 pip3 install xlwt
