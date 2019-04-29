@@ -8,7 +8,7 @@
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
-## Installation (based on Ubuntu 18.04 LTS)
+## OS installation and configuration (based on Ubuntu 18.04 LTS)
 ### time zone and ntp
 ```
 dpkg-reconfigure tzdata
@@ -99,7 +99,7 @@ pip3 install xlrd
 sudo apt-get install ttf-wqy-zenhei
 ```
 
-### Odoo
+## Odoo installation and configuration
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
@@ -109,14 +109,14 @@ apt-get update && apt-get install odoo
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
-#### configure odoo with remote database
+### configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
   
-#### apps and modules
+### apps and modules
 
-##### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
+#### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
 2. restart the odoo server and update "App List"
 3. install `emipro_theme_base`
@@ -129,6 +129,7 @@ apt-get update && apt-get install odoo
   * [use the Gmail SMTP Server](https://support.google.com/a/answer/176600?hl=en)
     * [let less secure apps access your account](https://support.google.com/accounts/answer/6010255?hl=en)
 * [how to Utilize Google’s Free SMTP Server to Send Emails](https://kinsta.com/knowledgebase/free-smtp-server/)
+
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
