@@ -93,6 +93,12 @@ pip3 install num2words
 pip3 install xlrd
 ```
 
+### Chinese font
+* display Chinese char correctly in PDF
+```
+sudo apt-get install ttf-wqy-zenhei
+```
+
 ### Odoo
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
