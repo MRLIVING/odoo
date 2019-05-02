@@ -147,5 +147,4 @@ apt-get update && apt-get install odoo
 * [Odoo12 Accounting](https://richsoda.com/blog/odoo-1/post/odoo-12-4?fbclid=IwAR1IupXnkadSyA2cOaZn7cPBRhPdd1ob7MixyOfYzmuJpHRZLAnB81_Brw0)
 * [Odoo - Outgoing mail setting](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html#how-to-use-a-g-suite-server)
 * [Odoo - Configuration File](https://vishnuarukat.xyz/articles/odoo9-configuration-files#log)
-* [Odoo - How to import data into Odoo](https://www.odoo.com/documentation/user/12.0/general/base_import/import_faq.html)
 * [Godaddy - types of DNS records](https://www.godaddy.com/garage/dns-records-a-beginners-guide/)
