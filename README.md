@@ -118,6 +118,9 @@ apt-get update && apt-get install odoo
 ### Enable Multi-Websites
 * Website => Configuration => Settings => Features => Multi-Websites 
 
+### Enable Multi-companies
+* Settings => General Settings => Multi-companies => Multi-companies
+
 ### configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
