@@ -115,13 +115,15 @@ apt-get update && apt-get install odoo
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
+### Enable Multi-Websites
+* Website => Configuration => Settings => Features => Multi-Websites 
+
 ### configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
   
 ### apps and modules
-
 #### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
 2. restart the odoo server and update "App List"
