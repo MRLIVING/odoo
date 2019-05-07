@@ -47,6 +47,13 @@ location /.well-known/acme-challenge/ {
 ```
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
+#### [install](https://wiki.gslin.org/wiki/Dehydrated#.E5.AE.89.E8.A3.9D)
+```
+sudo add-apt-repository ppa:gslin/dehydrated-lite
+sudo apt update
+sudo apt install dehydrated-lite
+```
+
 #### configuration
 /etc/dehydrated/config
 ```
