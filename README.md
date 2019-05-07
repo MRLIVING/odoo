@@ -29,12 +29,12 @@ if ($http_x_forwarded_proto = "http") {
 }
 
 location / {
-  		# First attempt to serve request as file, then
-  		# as directory, then fall back to displaying a 404.
-  		try_files $uri $uri/ =404;
+    # First attempt to serve request as file, then
+    # as directory, then fall back to displaying a 404.
+    try_files $uri $uri/ =404;
     
     proxy_set_header   X-Forwarded-For $remote_addr;
-		  proxy_set_header   Host $http_host;
+    proxy_set_header   Host $http_host;
     proxy_pass         "http://127.0.0.1:8069";
 }
 
