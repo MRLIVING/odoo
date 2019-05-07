@@ -55,6 +55,11 @@ sudo apt install dehydrated-lite
 ```
 
 #### configuration
+```
+sudo mkdir /etc/dehydrated
+sudo touch /etc/dehydrated/config
+```
+
 /etc/dehydrated/config
 ```
 KEYSIZE=2048
