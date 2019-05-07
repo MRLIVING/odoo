@@ -58,6 +58,7 @@ sudo apt install dehydrated-lite
 ```
 sudo mkdir /etc/dehydrated
 sudo touch /etc/dehydrated/config
+sudo touch /etc/dehydrated/domains.txt
 ```
 
 /etc/dehydrated/config
