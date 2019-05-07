@@ -28,6 +28,8 @@ if ($http_x_forwarded_proto = "http") {
     return 301 https://$host$request_uri; 
 }
 
+...
+
 location / {
     # First attempt to serve request as file, then
     # as directory, then fall back to displaying a 404.
