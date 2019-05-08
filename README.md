@@ -4,6 +4,7 @@
   * [Nginx](#nginx)
   * [dehydrated](#dehydrated)
   * [apply/update the certificates to GCP load balancing](#applyupdate-the-certificates-to-gcp-load-balancing)
+* [Odoo installation and configuration](#odoo-installation-and-configuration)
 
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
