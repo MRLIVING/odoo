@@ -4,7 +4,7 @@
   * [Nginx](#nginx)
   * [dehydrated](#dehydrated)
   * [apply/update the certificates to GCP load balancing](#applyupdate-the-certificates-to-gcp-load-balancing)
-  * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service)
+  * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](#gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
 
 ## Overview of scalable odoo
