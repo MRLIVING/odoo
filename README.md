@@ -101,10 +101,6 @@ gcloud compute target-https-proxies update ${target_proxy_name} \
 --ssl-certificates ${cert_name_in_lb}-$(date +%Y%m%d)
 ```
 
-### [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](https://cloud.google.com/load-balancing/docs/https/cross-region-example#shutting_off_https_access_from_everywhere_but_the_load_balancing_service)
-* allows traffic from `130.211.0.0/22` and `35.191.0.0/16` to the odoo instances.
-  * [firewall rules for load balancer and the health checker](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
-
 ### [Wkhtmltopdf](https://wkhtmltopdf.org/index.html)
 * [Installation for Odoo 11/12 on Ubuntu 18.04](https://medium.com/@hendrasj/install-odoo-12-and-wkhtmltopdf-on-ubuntu-18-04-or-debian-9-160c2e10f123#8fae)
 ```
@@ -138,6 +134,13 @@ pip3 install xlwt
 ```
 sudo apt-get install ttf-wqy-zenhei
 ```
+
+## GCP
+### [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](https://cloud.google.com/load-balancing/docs/https/cross-region-example#shutting_off_https_access_from_everywhere_but_the_load_balancing_service)
+* allows traffic from `130.211.0.0/22` and `35.191.0.0/16` to the odoo instances.
+  * [firewall rules for load balancer and the health checker](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
+
+### [startup script](https://cloud.google.com/compute/docs/startupscript#providing_a_startup_script)
 
 ## Odoo installation and configuration
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
