@@ -83,14 +83,15 @@ sudo dehydrated -c
 ```
 
 ### [apply/update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
+* new Frontend IP and port for HTTPS from web UI **at first time**
+  * keep the `${target_proxy_name}` as the parameters of the following commands.
+  
 * create the certificates into `Load balancing/Certificate` 
 ```
 gcloud compute ssl-certificates create ${cert_name_in_lb} \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
 --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
 ```
-* new Frontend IP and port for HTTPS from web UI **at first time**
-  * keep the `${target_proxy_name}` as update parameters 
 
 * update SSL cretificates before expiration
 ```
