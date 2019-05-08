@@ -88,7 +88,7 @@ sudo dehydrated -c
   
 * create the certificates into `Load balancing/Certificate` 
 ```
-gcloud compute ssl-certificates create ${cert_name_in_lb} \
+gcloud compute ssl-certificates create ${cert_name_in_lb}-$(date +%Y%m%d) \
 --certificate /etc/dehydrated/certs/${domain_name}/fullchain.pem \
 --private-key /etc/dehydrated/certs/${domain_name}/privkey.pem
 ```
@@ -96,7 +96,7 @@ gcloud compute ssl-certificates create ${cert_name_in_lb} \
 * update SSL cretificates before expiration
 ```
 gcloud compute target-https-proxies update ${target_proxy_name} \
---ssl-certificates ${cert_name_in_lb}
+--ssl-certificates ${cert_name_in_lb}-$(date +%Y%m%d)
 ```
 
 ### [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
