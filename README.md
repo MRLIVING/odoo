@@ -200,12 +200,14 @@ apt-get update && apt-get install odoo
   4. Website => Configuration => Settings => "CHOOSE THEME"
   * [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
 
-#### configure outgoing email
+### configure outgoing email
 * [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html)
   * [use the Gmail SMTP Server](https://support.google.com/a/answer/176600?hl=en)
     * [let less secure apps access your account](https://support.google.com/accounts/answer/6010255?hl=en)
 * [how to Utilize Google’s Free SMTP Server to Send Emails](https://kinsta.com/knowledgebase/free-smtp-server/)
 
+
+### [sign in with Google account](https://www.odoo.com/documentation/user/12.0/general/auth/google.html)
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
