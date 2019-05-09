@@ -169,6 +169,9 @@ apt-get update && apt-get install odoo
 ### Enable Multi-companies
 * Settings => General Settings => Multi-companies => Multi-companies
 
+### Enable Multi-companies
+* Settings => Website => Pricing => Multiple Sales Prices per Product => Prices computed from formulas (discounts, margins, roundings)
+
 ### configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
