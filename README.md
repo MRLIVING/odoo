@@ -144,6 +144,9 @@ sudo apt-get install ttf-wqy-zenhei
   * [firewall rules for load balancer and the health checker](https://cloud.google.com/load-balancing/docs/https/#firewall_rules)
 
 ### [startup script](https://cloud.google.com/compute/docs/startupscript#providing_a_startup_script)
+* copy `odoo.conf` from [GCS](https://cloud.google.com/storage) to `/etc/odoo/`
+* add cloud SQL Domain-IP mapping to `/etc/hosts`
+* `mkdir` and `chmod` odoo `${data_dir}`
 
 ## Odoo installation and configuration
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
