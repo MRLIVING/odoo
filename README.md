@@ -1,10 +1,11 @@
 ## TOC
 * [Overview](#overview-of-scalable-odoo)
-* [Installation](#installation-based-on-ubuntu-1804-lts)
+* [OS Installation](#os-installation-and-configuration)
   * [Nginx](#nginx)
   * [dehydrated](#dehydrated)
   * [apply/update the certificates to GCP load balancing](#applyupdate-the-certificates-to-gcp-load-balancing)
   * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](#gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service)
+* [GCP](#gcp)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
 
 ## Overview of scalable odoo
