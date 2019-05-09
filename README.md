@@ -159,7 +159,8 @@ apt-get update && apt-get install odoo
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
 ### [Security](https://www.odoo.com/documentation/12.0/setup/deploy.html#security)
-* set `list_db = False` in `odoo.conf` to block access to all the database selection and management screens.
+* `list_db = False` in `odoo.conf`
+  * blocking the database selection and management screens.
 * always check [Security recommandations](https://www.odoo.com/documentation/12.0/setup/deploy.html#security) if setting up a public server
 
 ### Enable Multi-Websites
