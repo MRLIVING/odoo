@@ -176,13 +176,15 @@ apt-get update && apt-get install odoo
   
 ### apps and modules
 #### Website - website (Technical Name)
+#### eCommerce - website_sale
+#### eCommerce Delivery - website_sale_delivery
 #### Contacts - contacts
 #### Cancel Journal Entries - account_cancel
 #### CRM - crm
 #### Inventory - stock
 #### Purchase - purchase
 #### Sales - sale_management
-
+#### Expenses - hr_expense
 
 #### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
