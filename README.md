@@ -178,6 +178,8 @@ apt-get update && apt-get install odoo
 #### Website - website (Technical Name)
 #### eCommerce - website_sale
 #### eCommerce Delivery - website_sale_delivery
+#### Blogs - website_blog
+#### Website Live Chat - website_livechat
 #### Contacts - contacts
 #### Cancel Journal Entries - account_cancel
 #### CRM - crm
@@ -185,6 +187,9 @@ apt-get update && apt-get install odoo
 #### Purchase - purchase
 #### Sales - sale_management
 #### Expenses - hr_expense
+#### [om_account_accountant](https://apps.odoo.com/apps/modules/12.0/om_account_accountant/), [如何找回 Odoo 12 的財會功能](https://richsoda.com/blog/odoo-1/post/odoo-12-4)
+#### [l10n_tw_standard_ifrss-12.0.zip](https://drive.google.com/open?id=1KL8pr_Yna5I7FXHnpIylp_avCVlj81_S)
+
 
 #### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
