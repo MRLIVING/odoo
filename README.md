@@ -158,6 +158,8 @@ apt-get update && apt-get install odoo
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
+### [Security](https://www.odoo.com/documentation/12.0/setup/deploy.html#security)
+
 ### Enable Multi-Websites
 * Website => Configuration => Settings => Features => Multi-Websites 
 
