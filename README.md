@@ -10,7 +10,9 @@
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
 
-## OS installation and configuration (based on Ubuntu 18.04 LTS)
+## OS installation and configuration 
+The following instructions are based on Ubuntu 18.04 LTS.
+
 ### time zone and ntp
 ```
 dpkg-reconfigure tzdata
