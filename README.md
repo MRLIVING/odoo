@@ -175,6 +175,10 @@ apt-get update && apt-get install odoo
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
   
 ### apps and modules
+#### Website - website (Technical Name)
+#### Contacts - contacts
+#### Cancel Journal Entries - account_cancel
+
 #### [Theme Clarico](https://apps.odoo.com/apps/themes/12.0/theme_clarico/)
 1. copy `emipro_theme_base` and `emipro_theme_base` into addons directory.
 2. restart the odoo server and update "App List"
