@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <t name="Mail: Pay Now mail notification template" t-name="mail.mail_notification_paynow">
 <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
 <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 24px; background-color: white; color: #454748; border-collapse:separate;">
@@ -37,13 +38,13 @@
                     <t t-esc="access_name"/>
                 </a>
             </div>
-            <div style="margin: 0px; padding: 0px; font-size:13px;">
+            <!-- div style="margin: 0px; padding: 0px; font-size:13px;">
                 Best regards,
             </div>
             <div>&amp;nbsp;</div>
             <div t-if="record.user_id and record.user_id.sudo().signature" style="font-size: 13px;">
                 <div t-raw="record.user_id.sudo().signature"/>
-            </div>
+            </div -->
         </td>
     </tr>
     <!-- FOOTER -->
@@ -69,7 +70,7 @@
 </td></tr>
 <!-- POWERED BY -->
 <tr><td align="center" style="min-width: 590px; padding: 8px; font-size:11px;">
-    Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email" style="color: #875A7B;">Odoo</a>
+    <!-- Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email" style="color: #875A7B;">Odoo</a> -->
 </td></tr>
 </table>
 </t>
