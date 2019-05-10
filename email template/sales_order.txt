@@ -1,0 +1,35 @@
+<div style="margin: 0px; padding: 0px;">
+	<p style="margin: 0px; padding: 0px; font-size: 16px;">
+		親愛的 ${object.partner_id.name} 您好，
+	</p>
+	<p style="margin: 0px; padding: 0px; font-size: 16px;">
+		% set doc_name = '報價單' if object.state in ('draft', 'sent') else '訂單' % endif
+		% if ctx.get('proforma') 
+			目前訂單已確立，此為您的形式發票(Proforma Invoice)。 <br>
+		% endif
+		
+		謝謝您對 HOOGAHOME 的支持，${doc_name} 總金額為 ${format_amount(object.amount_total, object.pricelist_id.currency_id)}，如果您有任何疑問或建議事項，歡迎您有任何疑問，請隨時與我們聯繫。
+		<br>
+	</p>
+	<a href="https://www.facebook.com/hoogahome/">
+		<img style="width:24px; height:auto; display:inline; margin-right:20px;" src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.2365-6/34929128_2542370199321677_3462617962773479424_n.png?_nc_cat=1&amp;_nc_ht=scontent.ftpe8-2.fna&amp;oh=37974eef9e97ebc73aaedd8afe4b0d26&amp;oe=5D77612E" alt="在 Facebook 上追蹤我們" >
+	</a>
+		&nbsp;&nbsp;
+	<a style="background-color: #ffffff;width: 100px;" href="https://line.me/ti/p/%40ufv0682f" target="_blank">
+			<img height="38" border="0" alt="LINE@客服" src="https://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png">
+	</a>
+	<br>
+		Phone &nbsp; : 09xx-xxxxxx
+	<br><br>
+	<div style="background-color:#dddddd ; margin: 0px; padding: 20px;">
+		<ul style="margin: 0px; padding: 0px; font-size: 12px;">
+			<li>購物流程如有任何疑問，以 HOOGAHOME 官方網站所列<a href="https://hoogahome.com/shop/terms">服務條款</a>內容為主。</li>
+			
+			<li>此項交易款並未包含樓層費。若您有電梯無法搬運商品之顧慮，麻煩請主動告知 LINE@客服，我們將盡力協助您解決搬運問題。</li>
+			
+			<li>同意為加速退貨退款作業辦理，由本公司代為處理電子發票及銷貨退回證明單。依統一發票使用辦法規定: 個人(二聯式)發票一經開立，無法更改或改開公司戶(三聯式)發票。</li>
+
+			<li>恕無法指定配送時間，如果顧客要求特定日(例如假日)配送，交期可能無法約定在交貨期間內，本公司不予負責。</li>
+		</ul>
+	</div>
+</div>
