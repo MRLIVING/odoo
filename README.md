@@ -170,10 +170,10 @@ apt-get update && apt-get install odoo
 ### Enable Multi-companies
 * Settings => General Settings => Multi-companies => Multi-companies
 
-### Enable Multi-companies
+### Enable Multiple Sales Prices
 * Settings => Website => Pricing => Multiple Sales Prices per Product => Prices computed from formulas (discounts, margins, roundings)
 
-### configure odoo with remote database
+### Configure odoo with remote database
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
