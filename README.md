@@ -212,6 +212,9 @@ apt-get update && apt-get install odoo
 ### User default page after login
 * Settings => Users => select an user => Preferences (tab) => Home Action => select a preferred action.
 
+### Product Categories
+* Inventory => Configurations => Products => Product Categories 
+
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
