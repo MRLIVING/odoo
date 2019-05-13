@@ -178,6 +178,8 @@ apt-get update && apt-get install odoo
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
   
+###   
+  
 ### apps and modules
 * Website - website (Technical Name)
 * eCommerce - website_sale
@@ -214,6 +216,9 @@ apt-get update && apt-get install odoo
 
 ### Product Categories
 * Inventory => Configurations => Products => Product Categories 
+
+### [Set Default Country in model](https://www.odoo.com/es_ES/forum/ayuda-1/question/set-default-country-123462#answer_123469)
+* set country with python script.
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
