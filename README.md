@@ -217,8 +217,12 @@ apt-get update && apt-get install odoo
 ### Product Categories
 * Inventory => Configurations => Products => Product Categories 
 
+### Countries and States
+* Contacts => Configuration => Localization => Countries => key in "Taiwan" in [Search...] bar ) => States
+
 ### [Set Default Country in model](https://www.odoo.com/es_ES/forum/ayuda-1/question/set-default-country-123462#answer_123469)
 * set country with python script.
+
 
 ## Reference
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
