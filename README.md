@@ -235,4 +235,5 @@ apt-get update && apt-get install odoo
 * [Odoo - Outgoing mail setting](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html#how-to-use-a-g-suite-server)
 * [Odoo - Configuration File](https://vishnuarukat.xyz/articles/odoo9-configuration-files#log)
 * [Odoo - How to change the users first page in Odoo community](https://www.targetintegration.com/change-users-first-page-login-odoo-community/)
+* [Odoo - How to Create a Module in Odoo 12](https://www.cybrosys.com/blog/how-to-create-module-in-odoo12)
 * [Godaddy - types of DNS records](https://www.godaddy.com/garage/dns-records-a-beginners-guide/)
