@@ -186,7 +186,8 @@ apt-get update && apt-get install odoo
 * eCommerce Delivery - website_sale_delivery
 * Blogs - website_blog
 * Website Live Chat - website_livechat
-* [Website Coupon Code](https://www.odoo.com/apps/modules/12.0/website_coupon/) - website_coupon
+* ~[Website Coupon Code](https://www.odoo.com/apps/modules/12.0/website_coupon/) - website_coupon~
+* [Website Coupons & Vouchers](https://apps.odoo.com/apps/modules/12.0/website_voucher/) - coupon & promotion
 * Contacts - contacts
 * Cancel Journal Entries - account_cancel
 * CRM - crm
