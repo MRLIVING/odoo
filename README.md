@@ -202,6 +202,7 @@ apt-get update && apt-get install odoo
   2. restart the odoo server and update "App List"
   3. install `emipro_theme_base`
   4. Website => Configuration => Settings => "CHOOSE THEME"
+  5. [change a theme font](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12#topic1142)
   * [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
 
 ### configure outgoing email
