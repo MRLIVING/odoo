@@ -1,5 +1,5 @@
 ## payUmoney 
-### `/payment/payumoney/return`
+### /payment/payumoney/return
 ```
 == General ==
 Request URL: http://${HOSTNAME}/payment/payumoney/return
