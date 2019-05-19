@@ -1,3 +1,50 @@
+
+## go2pay
+```
+== General ==
+Request URL: https://${PAY_HOST}/payment/go2pay.php
+Request Method: POST
+Status Code: 200 
+Remote Address: 52.68.106.16:443
+Referrer Policy: no-referrer-when-downgrade
+
+== Request Header ==
+authority: pay.hoogahome.com
+:method: POST
+:path: /payment/go2pay.php
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9
+cache-control: max-age=0
+content-length: 619
+content-type: application/x-www-form-urlencoded
+cookie: _ga=GA1.2.338646521.1555392120; _fbp=fb.1.1558184701814.540219740
+origin: http://${ODOO_HOST}
+referer: http://${ODOO_HOST}/shop/payment
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36
+
+==  Request Form Data ==
+txnid: SO012-1
+amount: 5250.0
+productinfo: SO012-1
+firstname: adminweb
+email: eric@mrliving.com.tw
+phone: 0922641978
+service_provider: payu_paisa
+hash: f1c32c510c465efcfb5eb3c1e5d72599d709918ccebcf85b16de94888b2b5213a552f6bf171c5a02d0a90203b183b0cc5aeafea60adf13480716d3c62bb18d3c
+surl: http://${ODOO_HOST}/payment/payumoney/return
+furl: http://${ODOO_HOST}/payment/payumoney/error
+curl: http://${ODOO_HOST}/payment/payumoney/cancel
+udf1: /payment/process
+oid: SO012-1
+price: 5250
+uname: adminweb
+key: 86eb159b42d995622f5f3e4803d14767717286aed2c01ee67092d68ae91889f8
+
+```
+
 ## [payUmoney](https://www.payumoney.com/)
 ### /payment/payumoney/return
 ```
