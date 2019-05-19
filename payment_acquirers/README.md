@@ -1,4 +1,4 @@
-## payUmoney
+## payUmoney (`/payment/payumoney/return`)
 ```
 == General ==
 Request URL: http://${HOSTNAME}/payment/payumoney/return
