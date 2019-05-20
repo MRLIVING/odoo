@@ -2,7 +2,7 @@
 <odoo>
     <template id="payumoney_form">
         <input type="hidden" name="data_set" t-att-data-action-url="tx_url" data-remove-me=""/>
-        <input type="hidden" name="key" t-att-value='key' />
+<!--        <input type="hidden" name="key" t-att-value='key' /> -->
         <input type="hidden" name="txnid" t-att-value='txnid' />
         <input type="hidden" name="amount" t-att-value='amount' />
         <input type="hidden" name="productinfo" t-att-value='productinfo' />
@@ -15,5 +15,10 @@
         <input type="hidden" name="furl" t-att-value='furl' />
         <input type="hidden" name="curl" t-att-value='curl' />
         <input type="hidden" name="udf1" t-att-value='udf1'/>
+        <!-- parameters for go2pay.php-->
+        <input type="hidden" name="oid" t-att-value='oid'/>
+        <input type="hidden" name="price" t-att-value='price'/>
+        <input type="hidden" name="uname" t-att-value='uname'/>
+        <input type="hidden" name="key" t-att-value='key' /> 
     </template>
 </odoo>
