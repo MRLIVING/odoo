@@ -8,6 +8,7 @@
 							<button type="" style=";margin-top:5px; border:none" class="btn btn-default pull-right" data-dismiss="modal">X</button>
 						</div>
 						<div class="modal-body wk_modal" style="clear:both;background-color:hsla(285, 6%, 85%, 0.45)">
+							<!--
 							<t t-set="voucher_ids" t-value="website.wk_get_customer_vouchers()"/>
 								<t t-foreach="voucher_ids" t-as="voucher_id">
 									<t t-set="remained_voucher" t-value="website.get_remained_voucher_value(voucher_id)"/>
@@ -37,6 +38,7 @@
 								<div t-if="not voucher_ids" class="no_vouchers">
 									No <br/>Coupons <br/>Available 
 								</div>
+							-->
 						</div> 
 						<div class="modal-footer">
 							<center><span style="color:#286090;cursor:pointer" data-dismiss="modal">Cancel</span></center>
