@@ -11,6 +11,7 @@ from odoo.tools.float_utils import float_compare
 
 import logging
 import hashlib
+from urllib.parse import urlparse
 
 _logger = logging.getLogger(__name__)
 
@@ -31,7 +32,7 @@ class PaymentAcquirerPayumoney(models.Model):
              return {'payumoney_form_url': 'https://pay.hoogahome.com/payment/go2pay.php'}
         else:
 #            return {'payumoney_form_url': 'https://test.payu.in/_payment'}
-             return {'payumoney_form_url': 'https://pay.hoogahome.com/payment/go2pay.php'}
+             return {'payumoney_form_url': 'https://pay.hoogahome.com/payment_test/go2pay.php'}
 
     def _payumoney_generate_sign(self, inout, values):
         """ Generate the shasign for incoming or outgoing communications.
@@ -73,6 +74,11 @@ class PaymentAcquirerPayumoney(models.Model):
     def payumoney_form_generate_values(self, values):
         self.ensure_one()
         base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
+        #-- replace proto to https if it is a domain name (not ip)
+        hostport = urlparse(base_url).netloc
+        if not all( [s.isdigit() for s in hostport.split(':')[0].split('.')] ):
+            base_url = base_url.replace('http://', 'https://')
+
         payumoney_values = dict(values,
 #                                key=self.payumoney_merchant_key,
                                 txnid=values['reference'],
