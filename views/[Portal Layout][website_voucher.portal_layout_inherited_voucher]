@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <data inherit_id="portal.portal_layout" name="Portal Layout">
+	<!--
 		<xpath expr="//div[@id='wrap']//div[@class='container mb64']//div[@id='o_my_sidebar']" position="after">
 		<div class="col-md-3 col-md-offset-1"><h3>Coupon Codes</h3>
 		<a type="button" class="btn_modal_vouchers" href="#" data-toggle="modal" data-target="#open_vouchers_modal">Click here</a> 
@@ -7,4 +8,5 @@
 		</div>
 			<t t-call="website_voucher.coupon_modal"/>
 		</xpath>
+-->
 </data>
