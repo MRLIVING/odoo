@@ -670,8 +670,9 @@ class PaymentTransaction(models.Model):
         elif self.state == 'authorized':
             message = _('The transaction %s with %s for %s has been authorized. Waiting for capture...')
         elif self.state == 'done':
-            message = _('The transaction %s with %s for %s has been confirmed. The related payment is posted: %s')
-            message_vals.append(self.payment_id._get_payment_chatter_link())
+            message = _('The transaction %s with %s for %s has been confirmed. The related payment is posted ...')
+#            message = _('The transaction %s with %s for %s has been confirmed. The related payment is posted: %s')
+#            message_vals.append(self.payment_id._get_payment_chatter_link())
         elif self.state == 'cancel' and self.state_message:
             message = _('The transaction %s with %s for %s has been cancelled with the following message: %s')
             message_vals.append(self.state_message)
