@@ -8,6 +8,7 @@
 * [GCP](#gcp)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
   * [configure outgoing email](#configure-outgoing-email)
+* [Reference](https://github.com/MRLIVING/odoo#reference)  
 
 ## Overview of scalable odoo
 ![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
