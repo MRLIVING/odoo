@@ -161,6 +161,10 @@ apt-get update && apt-get install odoo
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
+### [Builtin server](https://www.odoo.com/documentation/12.0/setup/deploy.html#builtin-server)
+* [Worker number configuration](https://www.odoo.com/documentation/12.0/setup/deploy.html#worker-number-calculation)
+* [Configuration sample](https://www.odoo.com/documentation/12.0/setup/deploy.html#id5)
+
 ### [Security](https://www.odoo.com/documentation/12.0/setup/deploy.html#security)
 * `list_db = False` in `odoo.conf`
   * blocking the database selection and management screens.
