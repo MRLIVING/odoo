@@ -20,7 +20,7 @@
                         <!-- View all -->
                         <div class="te_slider_view_all mb32">
                             <!-- a t-att-href="'shop?filter_id=%s'%active_filter_data">View All</a -->
-                            <a href="shop/category/404">View All</a>
+                            <a href="https://hoogahome.com/shop/category/404">View All</a>
                         </div>
                         <!-- Bootstrap carousel -->
                         <div class="carousel slide c_style_1 carousel_two_slide s_banner te_p_filter_slider myCarousel_filter_product" id="myCarousel_filter_product" data-interval="5000" data-ride="carousel">
