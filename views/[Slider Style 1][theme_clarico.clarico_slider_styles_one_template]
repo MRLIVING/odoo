@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<t name="Slider Style 1" t-name="theme_clarico.clarico_slider_styles_one_template">
+        <div t-if="filter_data" class="te_pc_style_1_main">
+            <div class="container">
+                <!-- Display Filters -->
+                <div class="te_slider_filter_main">
+                    <t t-if="is_default and len(slider_obj.slider_filter_ids.filtered(lambda r : r.website_published == True).ids) &gt; 1">
+                        <t t-foreach="slider_obj.slider_filter_ids.filtered(lambda r : r.website_published == True)" t-as="filter_id" t-if="len(slider_obj.slider_filter_ids.ids) &gt; 1">
+                            <div class="te_filter_value" t-if="filter_id.website_published">
+                                <h4 class="te_filter_name_h4 js_filter_change" t-att-data-id="filter_id.id">
+                                    <t t-esc="filter_id.name"/>
+                                </h4>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <!-- Products container -->
+                <div class="js_data_container">
+                    <div class="js_filter_data" t-att-filter-id="active_filter_data">
+                        <!-- View all -->
+                        <div class="te_slider_view_all mb32">
+                            <a t-att-href="'shop?filter_id=%s'%active_filter_data">View All</a>
+                        </div>
+                        <!-- Bootstrap carousel -->
+                        <div class="carousel slide c_style_1 carousel_two_slide s_banner te_p_filter_slider myCarousel_filter_product" id="myCarousel_filter_product" data-interval="5000" data-ride="carousel">
+                            <div t-if="len(filter_data) &gt; 2" class="">
+                                <a class="carousel-control-prev" data-target="#myCarousel_filter_product" data-slide="prev">
+                                    <i class="fa fa-chevron-left fa-lg text-muted"/>
+                                </a>
+                                <a class="carousel-control-next" data-target="#myCarousel_filter_product" data-slide="next">
+                                    <i class="fa fa-chevron-right fa-lg text-muted"/>
+                                </a>
+                            </div>
+                            <!-- To Display product's data -->
+                            <div class="carousel-inner row mx-auto">
+                                <t t-foreach="filter_data" t-as="prod_f">
+                                    <t>
+                                        <div class="carousel-item col-md-6 col-sm-6 col-lg-3">
+                                            <div class="s_s1_ind">
+                                                <form action="/shop/cart/update" method="post">
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                    <div class="ribbon-wrapper" t-if="prod_f.label_ept_id">
+                                                        <div class="label_div">
+                                                            <i class="fa fa-tag mr4"/>
+                                                            <div t-field="prod_f.label_ept_id" class="pull-right d-block"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="te_slider_img">
+                                                        <a t-attf-href="/shop/product/#{ slug(prod_f) }">
+                                                            <span t-field="prod_f.image" t-options="{'widget': 'image', 'resize': '330x330'}"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="te_prod_info">
+                                                        <section class="d-block position-relative p-3 te_prod_info_sub">
+                                                            <h6 class="text-center my-2">
+                                                                <a t-attf-href="/shop/product/#{ slug(prod_f) }" t-field="prod_f.name" class="product_name"/>
+                                                            </h6>
+                                                            <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price text-center" t-if="prod_f.product_variant_ids">
+                                                                <b>
+                                                                    <t t-if="prod_f.website_price_difference and website.get_current_pricelist().discount_policy=='without_discount'">
+                                                                        <del class="te_shop_del mr8" style="white-space: nowrap;" t-esc="compute_currency(prod_f.website_public_price)" t-options="{'widget':'monetary', 'display_currency': website.get_current_pricelist().currency_id,'from_currency': website.currency_id}"/>
+                                                                    </t>
+                                                                    <span t-esc="prod_f.website_price" class="d-inline-block" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                                    
+                                                                    <span itemprop="price" style="display:none;" t-esc="prod_f.website_price"/>
+                                                                    <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                                                                    
+                                                                </b>
+                                                                <div class="te_prod_cart_wish">
+                                                                    <input name="product_id" t-att-value="prod_f.product_variant_id.id" type="hidden"/>
+                                                                    <t t-if="len(prod_f.product_variant_ids) == 1">
+                                                                        <a href="#" role="button" class="btn btn-secondary a-submit btn-sm px-3 py-2" aria-label="Shopping cart" title="Shopping cart">
+                                                                            <span>Add to cart</span>
+                                                                        </a>
+                                                                    </t>
+                                                                    <t t-if="len(prod_f.product_variant_ids) &gt; 1">
+                                                                        <a role="button" class="btn btn-secondary btn-sm px-3 py-2" t-att-href="'/shop/product/%s' % slug(prod_f)" aria-label="Shopping cart" title="Shopping cart">
+                                                                            <span>Add to cart</span>
+                                                                        </a>
+                                                                    </t>
+                                                                    
+                                                                        <a role="button" class="btn btn-secondary btn-sm px-3 py-2" t-att-href="'/shop/product/%s' % slug(prod_f)" aria-label="Shopping cart" title="View more">
+                                                                            <span>View more</span>
+                                                                        </a>
+                                                                    
+                                                                    <t t-set="in_wish" t-value="prod_f.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                                                                    <button type="button" role="button" t-att-class="'btn px-3 py-2 btn-secondary btn-sm o_add_wishlist into_wishlist' if in_wish else 'btn btn-secondary btn-sm o_add_wishlist px-3 py-2'" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-product-id="prod_f.product_variant_ids[0].id if prod_f.product_variant_ids else '0'" data-action="o_wishlist">
+                                                                        <span class="fa fa-heart" role="img" aria-label="Add to wishlist"/>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
