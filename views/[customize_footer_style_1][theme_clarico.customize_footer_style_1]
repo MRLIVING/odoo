@@ -1,0 +1,140 @@
+<data inherit_id="website.footer_custom" active="False">
+  <xpath expr="//section[hasclass('s_text_block')]" position="replace"/>
+  <xpath expr="//div[@id='footer']" position="before">
+    <section class="s_text_block pt32">
+      <div class="container">
+        <div class="row">
+          <div class="te_footer_add_tel_email col-lg-3">
+            <!-- Company Logo -->
+            <div class="d-block mb16">
+              <a href="/" class="te_footer_logo">
+                <span t-field="res_company.logo" class="te_footer_logo_img" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+              </a>
+            </div>
+            <!-- Company Address -->
+            <ul class="te_footer_info_text">
+              <li t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id"><span class="te_footer_add_tel_email_text_ept">add</span>
+									:
+									
+                                    <span class="te_ftr_text_style"><span t-field="res_company.street"/><span t-field="res_company.street2"/><span t-field="res_company.city"/><span t-field="res_company.state_id"/><span t-field="res_company.zip"/><span t-field="res_company.country_id"/></span>
+                                </li>
+              <li t-if="res_company.phone"><span class="te_footer_add_tel_email_text_ept">tel</span>
+									:
+									
+                                    <span t-field="res_company.phone" class="te_ftr_text_style"/>
+                                </li>
+              <li t-if="res_company.email"><span class="te_footer_add_tel_email_text_ept"><p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<a href="https://www.facebook.com/hoogahome"><span class="fa fa-2x fa-facebook-f text-delta" style="" data-original-title="" title="" aria-describedby="tooltip963688"/></a>&amp;nbsp; &amp;nbsp;<a href="https://www.instagram.com/hoogahome.tw/"><span class="fa fa-2x fa-instagram text-delta" style="" data-original-title="" title="" aria-describedby="tooltip857934"/></a>&amp;nbsp; &amp;nbsp;<a href="mailto:service@hoogahome.com" target="_blank"><span class="fa fa-2x fa-envelope-o" style="color: rgb(0, 0, 0);" data-original-title="" title="" aria-describedby="tooltip980940"/></a><br/></p></span>
+									:
+									
+                                    <span t-field="res_company.email" class="te_ftr_text_style"/>
+                                </li>
+            </ul>
+            <!-- Social Icon -->
+            <div class="te_footer_social_icon">
+              <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link">
+                <i class="fa fa-2x fa-facebook-square" data-original-title="" title="" aria-describedby="tooltip679457" style="color: #3b5998;"/>
+              </a>
+              <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link">
+                <i class="fa fa-twitter"/>
+              </a>
+              <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link">
+                <i class="fa fa-linkedin"/>
+              </a>
+              <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link">
+                <p>
+                  <span class="fa fa-2x fa-youtube" style="" data-original-title="" title="" aria-describedby="tooltip29589"/>
+                  <br/>
+                </p>
+              </a>
+              <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" class="btn btn-sm btn-link" rel="publisher">
+                <i class="fa fa-google-plus-square"/>
+              </a>
+              <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link"/>
+              <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link">
+                <i class="fa fa-2x fa-instagram" data-original-title="" title="" aria-describedby="tooltip314110" style="color: rgb(66, 66, 66);"/>
+              </a>
+              <a style="background-color: #ffffff;width: 100px;" href="https://line.me/ti/p/%40ufv0682f" target="_blank">
+                <img height="35.6px" border="0" alt="LINE@客服" src="https://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png"/>
+              </a>
+            </div>
+          </div>
+          <!-- static Menu -->
+          <div class="col-lg-3 col-md-4">
+            <ul class="te_footer_info_ept">
+              <section>
+                <li>
+                  <a href="/transportation" data-original-title="" title="" aria-describedby="tooltip157984">購物說明</a>
+                </li>
+              </section>
+            </ul>
+          </div>
+          <!-- static Menu -->
+          <div class="col-lg-3 col-md-4">
+            <ul class="te_footer_info_ept">
+              <section>
+                <li>
+                  <a href="/transportation#transportation_2" data-original-title="" title="" aria-describedby="tooltip737390">運費 / 樓層費說明</a>
+                </li>
+              </section>
+              <section>
+                <li>
+                  <a href="https://hoogahome.com/transportation#transportation_3" data-original-title="" title="" aria-describedby="tooltip200765">退換貨說明</a>
+                </li>
+              </section>
+            </ul>
+          </div>
+          <!-- static Menu -->
+          <div class="col-lg-3 col-md-4">
+            <ul class="te_footer_info_ept">
+              <section>
+                <li>
+                  <a href="/privacyandpolicy" data-original-title="" title="" aria-describedby="tooltip779963">隱私權條款</a>
+                </li>
+              </section>
+            </ul>
+          </div>
+          <!-- Payment Methods -->
+          <!-- Multiple Language Selected-->
+          <!--
+          <div class="col-lg-3 te_language">
+            <section class="te_footer_text_img">
+              <section>
+                <h2>Payment Methods</h2>
+              </section>
+              <section>
+                <img src="/theme_clarico/static/src/img/customise_option/payment2.png"/>
+              </section>
+            </section> 
+            
+            <t t-call="website.language_selector"/>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </xpath>
+  <!-- static Menu -->
+  <xpath expr="//div[@id='footer']" position="after">
+    <div class="te_body_bg">
+      <div class="container">
+        <section>
+          <ul class="te_footer_inline_menu_t">
+            <li>
+              <section>HOOGA HOME<a href="#" data-original-title="" title="" aria-describedby="tooltip493422"/></section>
+            </li>
+          </ul>
+        </section>
+        <!-- Copyright Text-->
+        <section class="te_copyright_add_language">
+          <span>Copyright &amp;copy;</span>
+          <span t-field="res_company.name" itemprop="name">Company name</span>
+        </section>
+      </div>
+    </div>
+    <!-- Scroll Up Icon -->
+    <div class="scrollup-div text-center">
+      <a href="#" class="scrollup-a">
+        <i class="fa fa-angle-up scrollup-i text-center"/>
+      </a>
+    </div>
+  </xpath>
+</data>
