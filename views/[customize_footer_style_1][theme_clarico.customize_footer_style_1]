@@ -64,14 +64,14 @@
           <div class="col-lg-3 col-md-4">
             <!-- Social Icon -->
             <div class="te_footer_social_icon">
-              <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link">
-                <i class="fa fa-facebook-square fa-3x" data-original-title="" title="" aria-describedby="tooltip679457" style="color: #3b5998;"/>
-              </a>
               <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link">
                 <p>
                   <span class="fa fa-youtube-play fa-2x" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip29589"/>
                   <br/>
                 </p>
+              </a>
+              <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link">
+                <i class="fa fa-facebook-square fa-3x" data-original-title="" title="" aria-describedby="tooltip679457" style="color: #3b5998;"/>
               </a>
               <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link">
                 <img class="img-fluid o_we_custom_image float-left" src="/web/image/4125/Instagram_AppIcon_Aug2017.png" style="width: 25%;" data-original-title="" title="" aria-describedby="tooltip951036"/>
