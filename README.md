@@ -85,10 +85,13 @@ ${domain_name}
 sudo dehydrated --register --accept-terms
 ```
 
-2. Sign/renew non-existent/changed/expiring certificates
+2. Sign/renew non-existent/changed/expiring certificates with challenge (http-01/dns-01)
+* http-01 
 ```
 sudo dehydrated -c
 ```
+* dns-01 if wildcard domain, e.g. *.hoogahome.tw
+see [Godaddy.sh](https://github.com/zxvv/dehydrated-godaddy-dns-01) for detail
 
 ### [apply/update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
 * new Frontend IP and port for HTTPS from web UI **at first time**
