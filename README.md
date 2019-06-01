@@ -76,7 +76,8 @@ KEYSIZE=2048
 ${domain_name}
 ```
 
-* make dir and chmod for sign/renew the domain certificates
+* make dir for sign/renew the domain certificates
+  * chmod if required
 ```
 mkdir -p /var/www/dehydrated
 ```
