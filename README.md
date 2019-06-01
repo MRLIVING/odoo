@@ -76,6 +76,11 @@ KEYSIZE=2048
 ${domain_name}
 ```
 
+* make dir and chmod for sign/renew the domain certificates
+```
+mkdir -p /var/www/dehydrated
+```
+
 #### create ssl certificates
 1. accept these terms of service **at first time only**
 ```
