@@ -48,6 +48,7 @@ location / {
 location /.well-known/acme-challenge/ {
     alias /var/www/dehydrated/;
 }
+...
 ```
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
