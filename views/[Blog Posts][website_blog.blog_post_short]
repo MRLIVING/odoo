@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<t name="Blog Posts" t-name="website_blog.blog_post_short">
+    <t t-call="website_blog.index">
+        <t t-set="head">
+            <link t-att-href="'/blog/%s/feed' % (blog.id)" type="application/atom+xml" rel="alternate" title="Atom Feed"/>
+            <meta t-if="len(active_tag_ids) &gt; 0" name="robots" t-attf-content="#{len(active_tag_ids) &gt; 1 and 'noindex,'} nofollow"/>
+        </t>
+        <div class="oe_structure" id="oe_structure_website_blog_post_short_1"/>
+        <div class="container">
+            <t t-call="website.pager">
+                <t t-set="classname">float-right</t>
+            </t>
+        </div>
+        <div class="oe_structure">
+            <section class="mb0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb32 mt16 text-center">
+                            <h1 t-field="blog.name"/>
+                            <h3 class="text-muted" t-field="blog.subtitle"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2" t-ignore="True" id="main_column">
+
+                <div t-if="not blog_posts" class="container mb64">
+                    <p class="css_editable_hidden">
+                        <h1>No blog post yet.</h1>
+                    </p>
+                  <p groups="website.group_website_designer">
+                        Click on "New Page" in the top-right corner to write your first blog post.
+                    </p>
+                </div>
+
+                <div t-foreach="blog_posts" t-as="blog_post" class="mb32" name="blog_post">
+                    <a t-attf-href="/blog/#{ slug(blog_post.blog_id) }/post/#{ slug(blog_post) }">
+                        <h2 t-field="blog_post.name" class="mb4 o_blog_post_title">Untitled Post</h2>
+                    </a>
+                    <div class="text-muted">
+                        <div t-field="blog_post.teaser" class="mb12 mt12 o_blog_post_teaser"/>
+                        <div name="blog_post_data" class="mb0">
+                            <span t-field="blog_post.author_id" style="display: inline-block;" t-options="{                                 &quot;widget&quot;: &quot;contact&quot;,                                 &quot;fields&quot;: [&quot;name&quot;]                             }"/>
+                            &amp;mdash; <span t-field="blog_post.post_date" t-options="{&quot;format&quot;: &quot;MMMM yyyy&quot;}"/>
+                            <span t-if="len(blog_post.message_ids) &gt; 0">
+                                &amp;mdash; <t t-esc="len(blog_post.message_ids)"/>
+                                <t t-if="len(blog_post.message_ids) &lt;= 1">comment</t>
+                                <t t-if="len(blog_post.message_ids) &gt; 1">comments</t>
+                            </span>
+                            <span t-if="blog_post.visits &gt; 0">
+                                &amp;mdash; <t t-esc="blog_post.visits"/>
+                                <t t-if="blog_post.visits &lt;= 1">view</t>
+                                <t t-if="blog_post.visits &gt; 1">views</t>
+                            </span>
+                            <span t-if="not blog_post.website_published" class="badge badge-danger">unpublished</span>
+                            <span class="fa fa-tags" role="img" aria-label="Tags" title="Tags"/>
+
+                            <!-- To display tags //no options -->
+                            <t t-foreach="blog_post.tag_ids" t-as="one_tag">
+                                <a class="mr8" t-attf-href="#{blog_url(tag=one_tag.id, date_begin=False, date_end=False)}" t-esc="one_tag.name"/>
+                            </t>
+                            <div class="o_sharing_links">
+                                <a class="fa fa-twitter-square o_twitter" aria-label="Twitter" title="Twitter"/>
+                                <a class="fa fa-facebook-square o_facebook" aria-label="Facebook" title="Facebook"/>
+                                <a class="fa fa-linkedin-square o_linkedin" aria-label="LinkedIn" title="LinkedIn"/>
+                                <a class="fa fa-google-plus-square o_google" aria-label="Google Plus" title="Google Plus"/>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="oe_structure" id="oe_structure_website_blog_post_short_2"/>
+    </t>
+</t>
