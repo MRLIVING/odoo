@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<t name="Latest Blogs" t-name="website_blog.latest_blogs">
+    <t t-call="website.layout">
+        <div id="wrap">
+            <div class="oe_structure" id="oe_structure_website_blog_latest_blogs_1"/>
+            <section class="container">
+                <div class="alert alert-warning alert-dismissable mt16" groups="website.group_website_publisher" role="status">
+                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">&amp;times;</button>
+                   <p>
+                   This page is great to improve your <strong>Search Engine Optimization</strong>;
+                   You can review titles, keywords and descriptions of all blogs at once.
+                   </p><p>
+                   You should <strong>add a banner on the top</strong> as it is a frequent landing page for new visitors.
+                   <span class="text-muted">This box will not be visible to your visitors.</span>
+                   </p>
+                </div>
+                <t t-call="website.pager">
+                    <t t-set="classname">float-right</t>
+                </t>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Latest Posts</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <t t-set="count" t-value="0"/>
+                    <t t-foreach="posts" t-as="post">
+                      <div class="col-lg-4">
+                        <h4>
+                            <a t-attf-href="#{blog_url('', ['blog', 'post'], blog=post.blog_id, post=post)}" t-field="post.name"/>
+                            <span t-if="not post.website_published" class="text-warning">
+                                <span class="fa fa-exclamation-triangle ml8" title="Unpublished" role="img" aria-label="Unpublished"/>
+                            </span>
+                        </h4>
+                        <div class="text-muted">
+                            <span class="fa fa-calendar mr8" role="img" aria-label="Post date" title="Post date"/>
+                            <span t-field="post.post_date"/>
+                            <span class="fa fa-folder-open"/> In
+                            <a class="mr8" t-attf-href="#{blog_url(blog=post.blog_id)}">
+                            <span t-field="post.blog_id"/>
+                            </a>
+                        </div>
+                        <div class="text-muted">
+                            <span t-if="editable or post.tag_ids" class="fa fa-tags" role="img" aria-label="Tags" title="Tags"/>
+                            <t t-foreach="post.tag_ids" t-as="one_tag">
+                              <a class="badge badge-primary mr8" t-attf-href="#{blog_url('', ['blog', 'post'], blog=post.blog_id, tag=one_tag.id)}" t-esc="one_tag.name"/>
+                            </t>
+                            <span t-if="editable and not post.tag_ids" class="badge badge-danger">
+                                No tags defined!
+                            </span>
+                        </div>
+                        <div class="text-muted" t-if="len(post.message_ids) &gt; 0">
+                            <span class="fa fa-comment-o"/>
+                            <a t-attf-href="#{blog_url('', ['blogpost'], blogpost=post)}#comments">
+                                <t t-if="len(post.message_ids) &lt;= 1"><t t-esc="len(post.message_ids)"/> comment</t>
+                                <t t-if="len(post.message_ids) &gt; 1"><t t-esc="len(post.message_ids)"/> comments</t>
+                            </a>
+                        </div>
+                        <div class="text-muted mb16" t-field="post.website_meta_description"/>
+                      </div>
+                      <t t-set="count" t-value="count+1"/>
+                      <div class="clearfix" t-if="(count % 3) == 0"/>
+                    </t>
+                </div>
+            </section>
+            <div class="oe_structure" id="oe_structure_website_blog_latest_blogs_2"/>
+        </div>
+    </t>
+</t>
