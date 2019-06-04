@@ -4,12 +4,12 @@
         <attribute name="class">col-md-8</attribute>
     </xpath>
     <xpath expr="//div[@id='blog_right_column']" position="inside">
-        <section class="mt32">
+        <!-- section class="mt32">
         <h4>About us</h4>
         <p>
             Write a small text here for when <b>new visitors</b> find your website
             through your <b>blog entries</b>, referenced in Google.
         </p>
-        </section>
+        </section -->
     </xpath>
 </data>
