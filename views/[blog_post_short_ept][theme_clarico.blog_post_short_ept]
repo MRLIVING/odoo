@@ -21,11 +21,14 @@
 				</span>
             </div>
             <div t-field="blog_post.teaser" class="mb12 mt12 o_blog_post_teaser"/>
-            <div class="o_sharing_links">
+	<a t-attf-href="/blog/#{ slug(blog_post.blog_id) }/post/#{ slug(blog_post) }" class="btn btn-primary btn-theme o_default_snippet_text">
+                Read more
+            </a>
+            <!-- div class="o_sharing_links">
                 <a class="fa fa-twitter o_twitter" aria-label="Twitter" title="Twitter"/>
                 <a class="fa fa-facebook o_facebook" aria-label="Facebook" title="Facebook"/>
                 <a class="fa fa-linkedin o_linkedin" aria-label="LinkedIn" title="LinkedIn"/>
                 <a class="fa fa-google-plus o_google" aria-label="Google Plus" title="Google Plus"/>
-            </div>
+            </div -->
         </xpath>
     </data>
