@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<data name="Archives" inherit_id="website_blog.index_right" active="True" customize_show="True">
+    <xpath expr="//div[@id='main_column']" position="attributes">
+        <attribute name="class">col-md-8</attribute>
+    </xpath>
+    <xpath expr="//div[@id='blog_right_column']" position="inside">
+        <section class="mt32">
+        <h4>Archives</h4>
+        <ul class="nav nav-pills flex-column">
+            <t t-foreach="nav_list" t-as="year">
+                <li data-toggle="collapse" t-att-data-target="'#b_' + year" aria-expanded="false" class="nav-item blog_post_year_collapse mt8">
+                    <i t-attf-class="fa #{'fa-chevron-down' if not date and year_index == 0 else 'fa-chevron-right'} mr4" role="img" aria-label="Next year" title="Next year"/><span t-esc="year"/>
+                </li>
+                <ul t-attf-class="blog_post_year collapse nav nav-pills flex-column #{not date and year_index == 0 and 'in'}" t-att-id="'b_' + year" role="menu">
+                    <t t-foreach="nav_list[year]" t-as="months">
+                        <li t-if="months['date_begin'] == date" class="nav-item">
+                            <a role="menuitem" t-ignore="True" t-attf-href="#{blog_url(date_begin=False, date_end=False)}" class="nav-link active"><t t-esc="months['month']"/><span class="float-right badge badge-pill" t-esc="months['post_date_count']"/></a>
+                        </li>
+                        <li t-else="1" class="nav-item">
+                            <a role="menuitem" t-ignore="True" t-attf-href="#{blog_url(date_begin=months['date_begin'], date_end=months['date_end'])}" class="nav-link"><t t-esc="months['month']"/><span class="float-right badge badge-pill" t-esc="months['post_date_count']"/></a>
+                        </li>
+                    </t>
+                </ul>
+            </t>
+        </ul>
+        </section>
+    </xpath>
+</data>
