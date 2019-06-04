@@ -4,7 +4,7 @@
         <attribute name="class">col-md-8</attribute>
     </xpath>
     <xpath expr="//div[@id='blog_right_column']" position="inside">
-        <section class="mt32">
+        <!-- section class="mt32">
         <h4>Archives</h4>
         <ul class="nav nav-pills flex-column">
             <t t-foreach="nav_list" t-as="year">
@@ -23,6 +23,6 @@
                 </ul>
             </t>
         </ul>
-        </section>
+        </section -->
     </xpath>
 </data>
