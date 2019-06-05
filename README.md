@@ -255,6 +255,7 @@ apt-get update && apt-get install odoo
 * [Odoo - How to do Search Engine Optimisation in Odoo](https://www.odoo.com/documentation/user/12.0/website/optimize/seo.html#search-engines-files)
 * [Odoo - How to change the users first page in Odoo community](https://www.targetintegration.com/change-users-first-page-login-odoo-community/)
 * [Odoo - How to Create a Module in Odoo 12](https://www.cybrosys.com/blog/how-to-create-module-in-odoo12)
+  * [Defining the Views](https://www.cybrosys.com/blog/how-to-create-module-in-odoo-v12-defining-views)
   * [How to Add Custom Fields to Existing Views in Odoo](https://www.cybrosys.com/blog/adding-custom-fields-to-existing-views-in-odoo-v12)
 * [Command-line interface: odoo-bin](https://www.odoo.com/documentation/12.0/reference/cmdline.html)
 * [Godaddy - types of DNS records](https://www.godaddy.com/garage/dns-records-a-beginners-guide/)
