@@ -18,12 +18,12 @@
 									
                                     <span class="te_ftr_text_style"><span t-field="res_company.street"/><span t-field="res_company.street2"/><span t-field="res_company.city"/><span t-field="res_company.state_id"/><span t-field="res_company.zip"/><span t-field="res_company.country_id"/></span>
                                 </li>
-              <li t-if="res_company.phone"><span class="te_footer_add_tel_email_text_ept">tel</span>
+              <li t-if="res_company.phone"><span class="te_footer_add_tel_email_text_ept"><p><span class="fa fa-phone" style="color: rgb(99, 99, 99);" data-original-title="" title="" aria-describedby="tooltip786630"/></p></span>
 									:
 									
                                     <span t-field="res_company.phone" class="te_ftr_text_style"/>
                                 </li>
-              <li t-if="res_company.email"><span class="te_footer_add_tel_email_text_ept"><p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<a href="https://www.facebook.com/hoogahome"><span class="fa fa-2x fa-facebook-f text-delta" style="" data-original-title="" title="" aria-describedby="tooltip963688"/></a>&amp;nbsp; &amp;nbsp;<a href="https://www.instagram.com/hoogahome.tw/"><span class="fa fa-2x fa-instagram text-delta" style="" data-original-title="" title="" aria-describedby="tooltip857934"/></a>&amp;nbsp; &amp;nbsp;<a href="mailto:service@hoogahome.com" target="_blank"><span class="fa fa-2x fa-envelope-o" style="color: rgb(0, 0, 0);" data-original-title="" title="" aria-describedby="tooltip980940"/></a><br/></p></span>
+              <li t-if="res_company.email"><span class="te_footer_add_tel_email_text_ept"><p><a href="mailto:service@hoogahome.com" target="_blank"><span class="fa fa-envelope" style="color: rgb(99, 99, 99);" data-original-title="" title="" aria-describedby="tooltip980940"/></a><br/></p></span>
 									:
 									
                                     <span t-field="res_company.email" class="te_ftr_text_style"/>
@@ -93,6 +93,11 @@
           <!-- static Menu -->
           <div class="col-lg-3 col-md-4">
             <ul class="te_footer_info_ept">
+              <section>
+                <li>
+                  <a href="http://bit.ly/2Kz4iNQ" data-original-title="" title="" aria-describedby="tooltip157984">預約參觀表單(新莊實體店)</a>
+                </li>
+              </section>
               <section>
                 <li>
                   <a href="/transportation" data-original-title="" title="" aria-describedby="tooltip157984">購物說明</a>
