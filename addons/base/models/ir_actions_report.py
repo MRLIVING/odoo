@@ -250,7 +250,8 @@ class IrActionsReport(models.Model):
             else:
                 command_args.extend(['--margin-top', str(paperformat_id.margin_top)])
 
-            dpi = None
+#            dpi = None
+            dpi = 120
             if specific_paperformat_args and specific_paperformat_args.get('data-report-dpi'):
                 dpi = int(specific_paperformat_args['data-report-dpi'])
             elif paperformat_id.dpi:
