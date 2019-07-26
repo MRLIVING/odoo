@@ -64,10 +64,11 @@ class PaymentAcquirerPayumoney(models.Model):
                                                                 txnid=values['txnid'], 
                                                                 authcode=values['authcode'],
                                                                 merid=self.payumoney_merchant_key)
+            
 
         shasign = hashlib.sha256(sign.encode('ISO-8859-1')).hexdigest()
 #        shasign = hashlib.sha512(sign.encode('utf-8')).hexdigest()
-        _logger.info('hash: {s}'.format(s=shasign))
+        _logger.info('sign: {sign} hash: {h}'.format(sign=sign, h=shasign))
         return shasign
 
     @api.multi
