@@ -93,8 +93,18 @@ sudo dehydrated --register --accept-terms
 ```
 sudo dehydrated -c
 ```
+
   * dns-01 if wildcard domain, e.g. *.hoogahome.tw  
+```
+export PROVIDER=godaddy
+export GD_KEY="your-godaddy-api-key-here"
+export GD_SECRET="your-godaddy-api-secret-here"
+echo "hoogahome.com *.hoogahome.com" > domains.txt
+./dehydrated -c --challenge dns-01 --hook godaddy.sh
+```
+see [Godaddy API key](https://developer.godaddy.com/keys/)  
 see [Godaddy.sh](https://github.com/zxvv/dehydrated-godaddy-dns-01) for detail
+
 
 ### [apply/update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
 * new Frontend IP and port for HTTPS from web UI **at first time**
