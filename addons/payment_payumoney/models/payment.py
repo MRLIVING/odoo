@@ -59,11 +59,10 @@ class PaymentAcquirerPayumoney(models.Model):
 #            sign = ''.join('%s|' % (values.get(k) or '') for k in keys)
 #            sign = self.payumoney_merchant_salt + sign + self.payumoney_merchant_key
             security_key = self.payumoney_merchant_salt 
-            sign = '{sk}{status}{txnid}{authcode}{merid}'.format(sk=security_key, 
+            sign = '{sk}{status}{txnid}{authcode}'.format(sk=security_key, 
                                                                 status=values['status'],
                                                                 txnid=values['txnid'], 
-                                                                authcode=values['authcode'],
-                                                                merid=self.payumoney_merchant_key)
+                                                                authcode=values['authcode'])
             
 
         shasign = hashlib.sha256(sign.encode('ISO-8859-1')).hexdigest()
