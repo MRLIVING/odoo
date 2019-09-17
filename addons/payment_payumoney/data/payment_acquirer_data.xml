@@ -11,7 +11,7 @@
             <field name="pre_msg"><![CDATA[
                 <p>You will be redirected to the PayUmoney website after clicking on the payment button.</p>]]>
             </field>
-            <field name="payumoney_merchant_key">dummy</field>
+<!---            <field name="payumoney_merchant_key">dummy</field> -->
             <field name="payumoney_merchant_salt">dummy</field>
         </record>
     </data>
