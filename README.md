@@ -267,6 +267,7 @@ apt-get update && apt-get install odoo
 * [Odoo - How to Create a Module in Odoo 12](https://www.cybrosys.com/blog/how-to-create-module-in-odoo12)
   * [Defining the Views](https://www.cybrosys.com/blog/how-to-create-module-in-odoo-v12-defining-views)
   * [How to Add Custom Fields to Existing Views in Odoo](https://www.cybrosys.com/blog/adding-custom-fields-to-existing-views-in-odoo-v12)
+  * [set up a new module with command](https://www.odoo.com/documentation/12.0/howtos/backend.html#module-structure)
 * [Command-line interface: odoo-bin](https://www.odoo.com/documentation/12.0/reference/cmdline.html)
 * [Odoo addon - website google tag manager](https://github.com/OCA/website/tree/12.0/website_google_tag_manager)
 * [Godaddy - types of DNS records](https://www.godaddy.com/garage/dns-records-a-beginners-guide/)
