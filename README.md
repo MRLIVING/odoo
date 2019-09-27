@@ -8,7 +8,8 @@
 * [GCP](#gcp)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
   * [security](https://github.com/MRLIVING/odoo#security)
-  * [configure outgoing email](#configure-outgoing-email)  
+  * [configure outgoing email](#configure-outgoing-email)
+  * [Apps and Modules](#apps-and-modules)
 * [Reference](https://github.com/MRLIVING/odoo#reference)  
 
 ## Overview of scalable odoo
@@ -199,10 +200,8 @@ apt-get update && apt-get install odoo
 * /etc/odoo/odoo.conf  
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
-  
-###   
-  
-### apps and modules
+   
+### Apps and Modules
 * Website - website (Technical Name)
 * eCommerce - website_sale
 * eCommerce Delivery - website_sale_delivery
