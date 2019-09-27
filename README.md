@@ -210,6 +210,7 @@ apt-get update && apt-get install odoo
 * ~[Website Coupon Code](https://www.odoo.com/apps/modules/12.0/website_coupon/) - website_coupon~
 * [Website Coupons & Vouchers - website_voucher](https://apps.odoo.com/apps/modules/12.0/website_voucher/), coupon & promotion
 * [Facebook Pixel Integration - fb_pixel](https://apps.odoo.com/apps/modules/12.0/fb_pixel/)
+* [Shipping Per Product](https://apps.odoo.com/apps/modules/12.0/shipping_per_product/)
 * Contacts - contacts
 * Cancel Journal Entries - account_cancel
 * CRM - crm
