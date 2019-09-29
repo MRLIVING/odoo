@@ -11,6 +11,7 @@
   * [Apps and Modules](#apps-and-modules)  
   * [Configure odoo with remote database](#configure-odoo-with-remote-database)
   * [Configure outgoing email](#configure-outgoing-email)
+  * [Sign in with Google account](#sign-in-with-google-account)
 * [Reference](https://github.com/MRLIVING/odoo#reference)  
 
 ## Overview of scalable odoo
@@ -231,13 +232,13 @@ apt-get update && apt-get install odoo
 ](https://fonts.google.com/specimen/Noto+Sans+TC)
   * [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
 
-### configure outgoing email
+### Configure outgoing email
 * [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html)
   * [use the Gmail SMTP Server](https://support.google.com/a/answer/176600?hl=en)
     * [let less secure apps access your account](https://support.google.com/accounts/answer/6010255?hl=en)
 * [how to Utilize Google’s Free SMTP Server to Send Emails](https://kinsta.com/knowledgebase/free-smtp-server/)
 
-### [sign in with Google account](https://www.odoo.com/documentation/user/12.0/general/auth/google.html)
+### [Sign in with Google account](https://www.odoo.com/documentation/user/12.0/general/auth/google.html)
 
 ### User default page after login
 * Settings => Users => select an user => Preferences (tab) => Home Action => select a preferred action.
