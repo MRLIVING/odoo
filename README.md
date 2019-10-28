@@ -231,6 +231,8 @@ apt-get update && apt-get install odoo
      * [Noto Sans TC
 ](https://fonts.google.com/specimen/Noto+Sans+TC)
   * [user guide](https://shop.emiprotechnologies.com/documentation/theme-clarico?version=12)
+* [Google Tag Manager](https://odoo-community.org/shop/product/google-tag-manager-4427?version=11)
+
 
 ### Configure outgoing email
 * [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html)
