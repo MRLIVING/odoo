@@ -79,6 +79,11 @@ KEYSIZE=2048
 ${domain_name}
 ```
 
+* multiple domains in one certificat.
+```
+${domain_name1} ${domain_name2}
+```
+
 #### make dir for sign/renew the domain certificates
 * chmod if required
 ```
