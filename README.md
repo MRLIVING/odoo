@@ -114,7 +114,7 @@ see [Godaddy API key](https://developer.godaddy.com/keys/)
 see [Godaddy.sh](https://github.com/zxvv/dehydrated-godaddy-dns-01) for detail
 
 
-### [apply/update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
+### [Apply/Update the certificates to GCP load balancing](https://blog.gcp.expert/gcp-letsencrypt-ssl/) 
 * new Frontend IP and port for HTTPS from web UI **at first time**
   * keep the `${target_proxy_name}` (under `Network services/Load balancing/Target-proxies`) as the parameters of the following commands.
   
