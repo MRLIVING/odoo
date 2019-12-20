@@ -239,8 +239,9 @@ apt-get update && apt-get install odoo
 * [Google Tag Manager](https://odoo-community.org/shop/product/google-tag-manager-4427?version=11)
 
 TODO...
-* [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
 * [Sales Order Minimum Quantity](https://apps.odoo.com/apps/modules/12.0/abs_so_minimum_quantity/)
+  * https://www.odoo.com/fr_FR/forum/aide-1/question/maximum-and-minimum-qty-89018
+* [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
 * [Advanced Search in E-commerce](https://apps.odoo.com/apps/modules/12.0/website_sale_advanced_search/)
 
 
