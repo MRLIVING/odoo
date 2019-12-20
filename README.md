@@ -240,6 +240,7 @@ apt-get update && apt-get install odoo
 
 TODO...
 * [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
+* [Sales Order Minimum Quantity](https://apps.odoo.com/apps/modules/12.0/abs_so_minimum_quantity/)
 * [Advanced Search in E-commerce](https://apps.odoo.com/apps/modules/12.0/website_sale_advanced_search/)
 
 
