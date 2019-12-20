@@ -240,6 +240,8 @@ apt-get update && apt-get install odoo
 
 TODO...
 * [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
+* [Advanced Search in E-commerce](https://apps.odoo.com/apps/modules/12.0/website_sale_advanced_search/)
+
 
 
 ### Configure outgoing email
