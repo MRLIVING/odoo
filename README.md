@@ -243,6 +243,7 @@ TODO...
   * https://www.odoo.com/fr_FR/forum/aide-1/question/maximum-and-minimum-qty-89018
 * [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
 * [Advanced Search in E-commerce](https://apps.odoo.com/apps/modules/12.0/website_sale_advanced_search/)
+* [Minimum of Quantity in shop](https://apps.odoo.com/apps/modules/12.0/sh_shop_minqty/)
 
 
 
