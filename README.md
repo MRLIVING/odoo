@@ -7,7 +7,7 @@
   * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](#gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service)
 * [GCP](#gcp)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
-  * [security](https://github.com/MRLIVING/odoo#security)  
+  * [Security](https://github.com/MRLIVING/odoo#security)  
   * [Apps and Modules](#apps-and-modules)  
   * [Configure odoo with remote database](#configure-odoo-with-remote-database)
   * [Configure outgoing email](#configure-outgoing-email)
