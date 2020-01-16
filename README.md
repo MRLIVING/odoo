@@ -4,7 +4,7 @@
   * [Nginx](#nginx)
   * [dehydrated](#dehydrated)
   * [Apply/Update the certificates to GCP load balancing](#applyupdate-the-certificates-to-gcp-load-balancing)
-  * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](#gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service)
+  * [GCP firewall rule for shutting off HTTP(S) access from everywhere but the load balancing service](#gcp-firewall-rule-for-shutting-off-https-access-from-everywhere-but-the-load-balancing-service) 
 * [GCP](#gcp)
 * [Odoo installation and configuration](#odoo-installation-and-configuration)
   * [Security](https://github.com/MRLIVING/odoo#security)  
@@ -53,6 +53,8 @@ location /.well-known/acme-challenge/ {
 }
 ...
 ```
+
+#### security see [here](https://github.com/MRLIVING/security/blob/master/README.md#nginx)
 
 ### [dehydrated](https://wiki.gslin.org/wiki/Dehydrated) 
 #### [install](https://wiki.gslin.org/wiki/Dehydrated#.E5.AE.89.E8.A3.9D)
