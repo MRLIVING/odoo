@@ -242,7 +242,8 @@ apt-get update && apt-get install odoo
 
 TODO...
 * [Sales Order Minimum Quantity](https://apps.odoo.com/apps/modules/12.0/abs_so_minimum_quantity/)
-  * [Minimum of Quantity in shop](https://apps.odoo.com/apps/modules/12.0/sh_shop_minqty/)
+  * [Sale order min quantity](https://odoo-community.org/shop/product/sale-order-min-quantity-5165)
+  * [Minimum of Quantity in shop](https://apps.odoo.com/apps/modules/12.0/sh_shop_minqty/) 
   * https://github.com/Cywaithaka/product_minimum_order
   * https://www.odoo.com/fr_FR/forum/aide-1/question/minimum-purchase-quantity-145016
   * https://www.odoo.com/fr_FR/forum/aide-1/question/maximum-and-minimum-qty-89018    
