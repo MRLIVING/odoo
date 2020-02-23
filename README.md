@@ -274,6 +274,7 @@ TODO...
 
 
 ## Reference
+* [Odoo Online Book](https://odoobook.readthedocs.io/sv/latest/index.html)
 * [Deploying Odoo](https://www.odoo.com/documentation/12.0/setup/deploy.html)
 * [Certbot - dehydrated](https://github.com/lukas2511/dehydrated)
   * [dehydrated-godaddy-dns-01](https://github.com/zxvv/dehydrated-godaddy-dns-01)
