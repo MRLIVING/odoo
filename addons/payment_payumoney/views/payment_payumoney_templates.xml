@@ -19,6 +19,8 @@
         <input type="hidden" name="oid" t-att-value='oid'/>
         <input type="hidden" name="price" t-att-value='price'/>
         <input type="hidden" name="uname" t-att-value='uname'/>
-        <input type="hidden" name="key" t-att-value='key' /> 
+        <input type="hidden" name="key" t-att-value='key' />
+        <input type="hidden" name="com" t-att-value='com' />
+        <input type="hidden" name="isInstallment" t-att-value='isInstallment' />
     </template>
 </odoo>

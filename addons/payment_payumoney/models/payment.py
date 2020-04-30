@@ -29,10 +29,10 @@ class PaymentAcquirerPayumoney(models.Model):
         """ PayUmoney URLs"""
         if environment == 'prod':
 #            return {'payumoney_form_url': 'https://secure.payu.in/_payment'}
-             return {'payumoney_form_url': 'https://pay.hoogahome.com/payment/go2pay.php'}
+             return {'payumoney_form_url': 'https://pay2.hoogahome.com/payment/go2pay.php'}
         else:
 #            return {'payumoney_form_url': 'https://test.payu.in/_payment'}
-             return {'payumoney_form_url': 'https://pay.hoogahome.com/payment_test/go2pay.php'}
+             return {'payumoney_form_url': 'https://pay2.hoogahome.com/payment_test/go2pay.php'}
 
     def _payumoney_generate_sign(self, inout, values):
         """ Generate the shasign for incoming or outgoing communications.
@@ -95,6 +95,8 @@ class PaymentAcquirerPayumoney(models.Model):
                                 oid=values['reference'],
                                 price='{amo:.0f}'.format(amo=values['amount']),
                                 uname=values.get('partner_name'),
+                                com='hgh',
+                                isInstallment='true'
                                 )
 
         payumoney_values['udf1'] = payumoney_values.pop('return_url', '/')
