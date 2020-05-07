@@ -15,7 +15,7 @@
 * [Reference](https://github.com/MRLIVING/odoo#reference)  
 
 ## Overview of scalable odoo
-![](https://drive.google.com/uc?id=1HIilc_Xnc_ct7msmaO6sfdbTZduAX_hN)
+![](https://raw.githubusercontent.com/MRLIVING/odoo/master/doc/img/arch_scalable_odoo.PNG)
 
 ## OS installation and configuration 
 The following instructions are based on Ubuntu 18.04 LTS.
