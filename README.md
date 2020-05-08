@@ -186,11 +186,6 @@ sudo apt-get install ttf-wqy-zenhei
 ```
 
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
-```
-wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
-echo "deb http://nightly.odoo.com/12.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
-apt-get update && apt-get install odoo
-```
 
 * [v11](https://www.odoo.com/documentation/11.0/setup/install.html#repository)
 
