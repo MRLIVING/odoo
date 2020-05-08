@@ -178,6 +178,13 @@ sudo apt-get install ttf-wqy-zenhei
 * `mkdir` and `chmod` odoo `${data_dir}`
 
 ## Odoo installation and configuration
+* [v13](https://www.odoo.com/documentation/13.0/setup/install.html#repository)
+```
+# wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
+# echo "deb http://nightly.odoo.com/13.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
+# apt-get update && apt-get install odoo
+```
+
 * [v12](https://www.odoo.com/documentation/12.0/setup/install.html#repository)
 ```
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
