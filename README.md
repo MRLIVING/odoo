@@ -111,6 +111,7 @@ export GD_KEY="your-godaddy-api-key-here"
 export GD_SECRET="your-godaddy-api-secret-here"
 echo "hoogahome.com *.hoogahome.com" > domains.txt
 ./dehydrated -c --challenge dns-01 --hook ./godaddy.sh
+
 # copy/past TOKEN into DNS TXT record in management console
 ```
 
