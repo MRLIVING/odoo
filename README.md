@@ -258,7 +258,7 @@ TODO...
 * [Sale product set](https://apps.odoo.com/apps/modules/12.0/sale_product_set/)
 
 ### Configure outgoing email
-* [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/12.0/discuss/email_servers.html)
+* [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/13.0/discuss/email_servers.html)
   * [use the Gmail SMTP Server](https://support.google.com/a/answer/176600?hl=en)
     * [let less secure apps access your account](https://support.google.com/accounts/answer/6010255?hl=en)
 * [how to Utilize Google’s Free SMTP Server to Send Emails](https://kinsta.com/knowledgebase/free-smtp-server/)
