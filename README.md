@@ -198,7 +198,7 @@ sudo apt-get install ttf-wqy-zenhei
 
 ### [Security](https://www.odoo.com/documentation/12.0/setup/deploy.html#security)
 * `list_db = False` in `odoo.conf`
-  * blocking the database selection and management screens.
+  * blocking the database selection and management screens, eg. `${ODOO_HOST}/web/database/manager`
 * always check [Security recommandations](https://www.odoo.com/documentation/12.0/setup/deploy.html#security) if setting up a public server
 
 ### Enable Multi-Websites
