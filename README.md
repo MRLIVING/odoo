@@ -215,6 +215,11 @@ sudo apt-get install ttf-wqy-zenhei
   As the security issue, don't use `postgre` as the `db_user`.  
   If so, you'll get the error message, e.g. `Using the database user 'postgres' is a security risk, aborting.root@odoo12-prod:/etc/odoo`
    
+### Configure odoo additional addons paths
+* /etc/odoo/odoo.conf  
+  `addons_path = /usr/lib/python3/dist-packages/odoo/addons,/opt/odoo/addons`
+  customize 3rd-party addons in `/opt/odoo/addons`
+
 ### Apps and Modules
 * Website - website (Technical Name)
 * eCommerce - website_sale
