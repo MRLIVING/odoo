@@ -220,7 +220,11 @@ sudo apt-get install ttf-wqy-zenhei
   `addons_path = /usr/lib/python3/dist-packages/odoo/addons,/opt/odoo/addons`  
   `/opt/odoo/addons` contains the additional 3rd-party addons
 
-### Apps and Modules
+### Apps and Modules v13
+* [Odoo 13 Accounting](https://apps.odoo.com/apps/modules/13.0/om_account_accountant/)
+* [會計科目表 - 台灣企業會計準則 - IFRSs會計科目](https://apps.odoo.com/apps/modules/13.0/l10n_tw_standard_ifrss/)
+
+### Apps and Modules v12
 * Website - website (Technical Name)
 * eCommerce - website_sale
 * eCommerce Delivery - website_sale_delivery
