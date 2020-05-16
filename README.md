@@ -217,7 +217,7 @@ sudo apt-get install ttf-wqy-zenhei
    
 ### Configure odoo additional addons paths
 * /etc/odoo/odoo.conf  
-  `addons_path = /usr/lib/python3/dist-packages/odoo/addons,/opt/odoo/addons`
+  `addons_path = /usr/lib/python3/dist-packages/odoo/addons,/opt/odoo/addons`  
   customize 3rd-party addons in `/opt/odoo/addons`
 
 ### Apps and Modules
