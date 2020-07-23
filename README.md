@@ -266,6 +266,7 @@ TODO...
 * [Optimiser](https://apps.odoo.com/apps/modules/12.0/optimiser/)
 * [Advanced Search in E-commerce](https://apps.odoo.com/apps/modules/12.0/website_sale_advanced_search/)
 * [Sale product set](https://apps.odoo.com/apps/modules/12.0/sale_product_set/)
+* [Web Responsive](https://apps.odoo.com/apps/modules/12.0/web_responsive/)
 
 ### Configure outgoing email
 * [use gmail server to send outgoing emails](https://www.odoo.com/documentation/user/13.0/discuss/email_servers.html)
