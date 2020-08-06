@@ -112,7 +112,8 @@ export GD_SECRET="your-godaddy-api-secret-here"
 echo "hoogahome.com *.hoogahome.com" > domains.txt
 ./dehydrated -c --challenge dns-01 --hook ./godaddy.sh
 
-# copy/past TOKEN into DNS TXT record in management console
+# copy/past TOKEN into DNS TXT record with "_acme-challenge" subdomain in DNS management console
+# e.g. waiting for $TOKEN in the _acme-challenge.YourMainDomain TXT record on all nameservers:...
 ```
 
 see [Godaddy API key](https://developer.godaddy.com/keys/)  
